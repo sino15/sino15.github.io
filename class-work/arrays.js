@@ -23,8 +23,8 @@ console.log(images)
  */
 
 // Your code here
-var q2 = images[0]
-console.log('Question2'+q2)
+var q2 = images [0]
+console.log('Question 2' + q2)
 
 /**
  * Question 3
@@ -33,7 +33,7 @@ console.log('Question2'+q2)
  */
 
 // Your code here
-var q3=images.length
+var q3 = images.length
 console.log( 'Question 3 ' + q3)
 /**
  * Question 4
@@ -43,10 +43,8 @@ console.log( 'Question 3 ' + q3)
 
 
 // Your code here
-var q4 = images.length
-images[images.length -1]
-
-
+var q4 = image[images.length - 1]
+console.log('Question 4' + q4)
 
 
 // ____________________________________________________________________________
