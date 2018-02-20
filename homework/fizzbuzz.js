@@ -19,7 +19,7 @@
 
 // ##### Step 1:
 // Construct a for loop that iterates through, and `console.log()`'s out, numbers 1 - 100.
- for(var i = 1; i <= 100; i++){
+for(var i = 1; i <= 100; i++){
  if (i%3===0 && i%5 ===0) {
  	console.log('fizzbuzz')
  }else if(i%5===0){
@@ -30,7 +30,6 @@
  	console.log(i)
  }
 }
-
 
 
 // ##### Step 2:
