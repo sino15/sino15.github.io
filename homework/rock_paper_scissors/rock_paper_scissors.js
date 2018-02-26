@@ -38,7 +38,8 @@ function startGame(userChoice) {
 function generateCPUChoice () {
 	var choices = ['rock', 'paper', 'scissors']
 	var randonNum = Math.floor(Math.random() * 3)
-	return randomNum = choices
+	
+	return choices [randonNum]
 	
 
 	}
