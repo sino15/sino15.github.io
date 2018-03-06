@@ -4,7 +4,7 @@ var myMap = new google.maps.Map(document.getElementById('map'), {
     lat: 40.7128,
     lng: -74.0060,
   },
-  zoom: 15
+  zoom: 12
 });
 
 var marker = new google.maps.Marker({
@@ -17,23 +17,20 @@ var marker = new google.maps.Marker({
 });
 
 
-
-
-
-
-
-//for each station create a new marker...
-//how to loop a station, 
-
-
 // CITIBIKE PROJECT HERE:
 function renderCitiBikeMarkers(stations) {
-  // YOUR CODE HERE!
-  console.log(stations)
-  stations.forEach(function(station){
-  	console.log(station) 
-  	//inside this create a new marker for each 
-    
+  stations.forEach(function(station) {
+    var stationLat = station.lat / 1000000
+    var stationLng = station.lng / 1000000
+
+    var marker = new google.maps.Marker({
+      position: {
+        lat: stationLat,
+        lng: stationLng,
+      },
+      map: myMap,
+      title: station.name,
+    });
   })
 }
 
