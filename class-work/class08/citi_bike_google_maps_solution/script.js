@@ -22,6 +22,7 @@ function renderCitiBikeMarkers(stations) {
   stations.forEach(function(station) {
     var stationLat = station.lat / 1000000
     var stationLng = station.lng / 1000000
+    console.log(station)
 
     var marker = new google.maps.Marker({
       position: {

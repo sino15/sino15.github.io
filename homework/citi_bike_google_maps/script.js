@@ -32,7 +32,7 @@ function renderCitiBikeMarkers(stations) {
   console.log(stations)
   stations.forEach(function(station){
   	console.log(station) 
-  	//inside this create a new marker for each 
+  	
     
   })
 }

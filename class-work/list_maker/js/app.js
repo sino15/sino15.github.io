@@ -29,15 +29,15 @@ Hint: the "value" property of an empty input box is an empty string: ""
 and alert the user with using the "alert" method
 
 */
-// document.querySelector('#add-item').onclick = addNewItem
+document.querySelector('#add-item').onclick = addNewItem
 
-// function addNewItem(){
-// 	console.log('test')
-// 	var newItem = document.querySelector('#new-item').value
-// 	var newListItem = document.createElement('li')
-// 	newListItem.innerHTML = newItem
-// 	document.querySelector('#list').appendChild(newListItem)
-// }
+function addNewItem(){
+	console.log('test')
+	var newItem = document.querySelector('#new-item').value
+	var newListItem = document.createElement('li')
+	newListItem.innerHTML = newItem
+	document.querySelector('#list').appendChild(newListItem)
+}
 
 
 
@@ -68,3 +68,8 @@ function addNewItem(){
 	var newItem = $('#new-item').val()
 	$('#list').append('<li>' + newItem + '</li>')
 }
+$(document).on('click', 'li', function(){
+	$(this).remove()
+})
+
+
