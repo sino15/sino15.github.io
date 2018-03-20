@@ -45,9 +45,9 @@ function handleSuccess(response) {
   $('#nyc-weather').append(response.main.hummidity)
   $('#nyc-weather').append(response.main.temp)
   $('#nyc-weather').append(response.wind.speed)
-  $('#nyc-weather').append('<p>' + response.main.weather + '</p>')
+  $('#nyc-weather').append('<p>' + response.main.hummidity + '</p>')
 
-  if(response.main.temp < 70){
+  if(response.main.temp > 70){
     $('body').css('background', 'not-so-happy')
   } else{
     $('body').css('background','happy Mayor de Blasio')
