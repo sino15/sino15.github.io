@@ -33,10 +33,26 @@
 
 function makeCountingFunction(predicate) {
 	// code here
+	return function(array){
+		var counter = 0 
+		array.forEach(function(num){
+			if (predicate(num)){
+				counter = counter + 1
+			}
+		})
+
+		return counter
+
+	}
 }
 
 function isOdd(num) {
 	// code here
+	if (num % 2 === 0){
+		return false
+	} else {
+		return true
+	}
 }
 
 
