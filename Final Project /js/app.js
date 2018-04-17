@@ -12,7 +12,7 @@ function ShowTime() {
 	if (seconds < 10){
 		seconds = "0" + seconds
 	} 
-	 if (hour < 23){
+	 if (hour === 23){
 	 	hour = "0" + hour 
 	 
 
