@@ -25,3 +25,4 @@ function ShowTime() {
 	$("#watchDisplay").text(time);
   }
   setInterval(ShowTime, 1000);
+
